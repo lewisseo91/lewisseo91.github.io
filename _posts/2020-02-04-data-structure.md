@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Pirates arrrr
+title: 자료구조 정렬
 ---
 
 2020/02/04
