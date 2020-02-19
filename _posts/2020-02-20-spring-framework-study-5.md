@@ -8,7 +8,7 @@ tags: [spring]
 
  - petclinic
 
- 
+
  - 지난 과제 
  - Lastname 검색 -> FirstName 검색으로
  - 같은 단어가 아니라 포함하는 단어면 검색 결과 도출되게
@@ -16,7 +16,7 @@ tags: [spring]
 
 
  - 풀이 
- - lastName -> firstName 검색으로 변경 
+ - lastName -> firstName 검색으로 변경  
         -> lastName으로 검색하는 부분을 먼저 찾자  
         -> view 단을 들어가야겠네? (mvc 구조니까~)  
         -> resources/templates 들어감  
@@ -40,7 +40,7 @@ tags: [spring]
         -> 그렇다면 EQUAL은? = 연산자 겠지. LIKE SEARCH를 EXACT SEARCH로 변경해 봄  
         -> 테스트 -> 성공  
         
- - owner에 age 추가
+ - owner에 age 추가  
         -> owner라는 객체는 column으로 항상 age를 가지고 있겠군  
         -> owner 모델부분 찾음 -> owner 모델에서 owner age column 추가 하고 getter & setter 메소드 추가  
         -> 추가는 됐는데 오류가 엄청 발생 (오잉 머지?)  
