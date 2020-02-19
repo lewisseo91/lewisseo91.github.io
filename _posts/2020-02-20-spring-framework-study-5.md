@@ -7,12 +7,12 @@ tags: [spring]
 스프링 공부 5일차 스프링 프레임워크 
 
  petclinic
- - 지난 과제 
+- 지난 과제 
     - Lastname 검색 -> FirstName 검색으로
     - 같은 단어가 아니라 포함하는 단어면 검색 결과 도출되게
     - owner에 age 추가
 
- - 풀이 
+- 풀이 
     - lastName -> firstName 검색으로 변경  
             -> lastName으로 검색하는 부분을 먼저 찾자  
             -> view 단을 들어가야겠네? (mvc 구조니까~)  
