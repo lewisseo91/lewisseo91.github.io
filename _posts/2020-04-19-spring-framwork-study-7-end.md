@@ -8,8 +8,8 @@ tags: [spring]
 
 petclinic
     AOP, PSA 에 대하여
-    
-AOP
+
+ AOP
  - Aspect Oriented Programming
   -> 관심사 기준 프로그래밍 & 관점 지향 프로그래밍 정도로 해석될 수 있다.
   -> 코드에서 같은 일을 하는 여러개의 코드를 전부 수정할 때 유용
