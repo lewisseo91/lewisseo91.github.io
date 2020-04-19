@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: page
 title: 연습 & 개인 프로젝트 링크들
 tags: [project-link]
 ---
