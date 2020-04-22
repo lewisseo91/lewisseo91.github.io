@@ -12,7 +12,7 @@ URL 엔터 후 일어나는 일
 
  0. 엔터 입력
  1. 웹 브라우저가 URL을 해석함. 
-    ( "Scheme: [//[user:password@]host[:port]][/]path[?query][#fragment]")
+    (Scheme: [//[user:password@]host[:port]][/]path[?query][#fragment])
  2. 문법에 맞으면 punycode encoding 을 url 부분에 적용. 
     ( punycode : 유니코드 문자열을 호스트 이름에서 허용된 문자만으로 인코딩하는 방법 RFC 3492)
  3. HSTS 목록을 로드해서 확인. 
