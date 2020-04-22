@@ -11,15 +11,22 @@ tags: [basicCS, network]
 URL 엔터 후 일어나는 일
 
  0. 엔터 입력
- 1. 웹 브라우저가 URL을 해석함. ( "Scheme: [//[user:password@]host[:port]][/]path[?query][#fragment]")
- 2. 문법에 맞으면 punycode encoding 을 url 부분에 적용. ( punycode : 유니코드 문자열을 호스트 이름에서 허용된 문자만으로 인코딩하는 방법 RFC 3492)
- 3. HSTS 목록을 로드해서 확인. (HTTP Strict Transport Security : http 대신 https 만을 사용하여 통신해야한다고 웹사이트가 브라우저에 알리는 보안 기능)
- 4. DNS 조회 (요청 보내기 전 Domain cache 되어 있는지 확인 --> 없으면 로컬 hosts 파일에서 참조 가능한 Domain 있는지 확인 --> 1,2 둘 다 없으면 network stack에 구성돼 있는 DNS로 요청을 보냄. 일반적으로 Local router, ISP 캐싱 DNS)
- 5. ARP로 대상 IP & MAC Address를 알아낸다.(ARP broadcast를 보내 확인해야 함. --> ARP broadcast : ARP 를 broadcast 하는 것 = mac address 통신 시도 , broadcast : 로컬 랜 상 붙어 있는 네트워크 통신을 하는 것.)
+ 1. 웹 브라우저가 URL을 해석함. 
+    ( "Scheme: [//[user:password@]host[:port]][/]path[?query][#fragment]")
+ 2. 문법에 맞으면 punycode encoding 을 url 부분에 적용. 
+    ( punycode : 유니코드 문자열을 호스트 이름에서 허용된 문자만으로 인코딩하는 방법 RFC 3492)
+ 3. HSTS 목록을 로드해서 확인. 
+    (HTTP Strict Transport Security : http 대신 https 만을 사용하여 통신해야한다고 웹사이트가 브라우저에 알리는 보안 기능)
+ 4. DNS 조회 
+    (요청 보내기 전 Domain cache 되어 있는지 확인 --> 없으면 로컬 hosts 파일에서 참조 가능한 Domain 있는지 확인 --> 1,2 둘 다 없으면 network stack에 구성돼 있는 DNS로 요청을 보냄. 일반적으로 Local router, ISP 캐싱 DNS)
+ 5. ARP로 대상 IP & MAC Address를 알아낸다.
+    (ARP broadcast를 보내 확인해야 함. --> ARP broadcast : ARP 를 broadcast 하는 것 = mac address 통신 시도 , broadcast : 로컬 랜 상 붙어 있는 네트워크 통신을 하는 것.)
  6. 대상과 TCP 통신을 통해 socket을 연다.
  7. HTTPS인 경우 TLS Handshake
- 8. http 프로토콜로 요청한다. (http라면 connection set-up 이후, https라면 handshake 한 이후)
- 9. http 서버가 응답한다. (httpd 서버가 요청을 수신 --> 요청을 매개변수로 구분(ex. http method(get,put), 도메인, 요청 경로) --> 가상 호스트 있는 지 확인 --> get 요청 수락 가능 확인 --> 클라이언트가 ip, 인증을 통해 method가 사용가능한 지 확인 --> rewrite module 이 설치 되어 있으면 요청 rule 중 하나와 일치하도록 시도 --> 서버 요청에 해당하는 콘텐츠 가져옴 --> 핸들러에 따라 파일 구문 해석)
+ 8. http 프로토콜로 요청한다. 
+    (http라면 connection set-up 이후, https라면 handshake 한 이후)
+ 9. http 서버가 응답한다. 
+    (httpd 서버가 요청을 수신 --> 요청을 매개변수로 구분(ex. http method(get,put), 도메인, 요청 경로) --> 가상 호스트 있는 지 확인 --> get 요청 수락 가능 확인 --> 클라이언트가 ip, 인증을 통해 method가 사용가능한 지 확인 --> rewrite module 이 설치 되어 있으면 요청 rule 중 하나와 일치하도록 시도 --> 서버 요청에 해당하는 콘텐츠 가져옴 --> 핸들러에 따라 파일 구문 해석)
  10. 웹 브라우저가 그린다. 랜더링
  11. 렌더링이 완료 후 브라우저는 Javascript 실행을 통해 DOM과 CSSOM이 변경 될 수 있는데, 레이아웃이 수정 되는 경우 페이지 렌더링 및 페인팅을 다시 수행함.
 
