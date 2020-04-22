@@ -1,7 +1,7 @@
 ---
 layout: post
 title: 브라우저 URL 입력 시 일어나는 일 
-tags: [basicCS]
+tags: [basicCS, network]
 ---
 
 브라우저 URL 입력 시 일어나는 일 
