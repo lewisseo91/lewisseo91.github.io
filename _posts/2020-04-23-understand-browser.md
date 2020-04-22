@@ -6,7 +6,7 @@ tags: [basicCS, network]
 
 브라우저 URL 입력 시 일어나는 일 
 
-### ** 아래 글은 owlgwang 님의 글 [웹 브라우저에 URL을 입력하면 어떤 일이 일어날까]](https://owlgwang.tistory.com/1) 을 보고 정리한 글입니다.
+### ** 아래 글은 owlgwang 님의 글 [웹 브라우저에 URL을 입력하면 어떤 일이 일어날까](https://owlgwang.tistory.com/1) 을 보고 정리한 글입니다.
 
 URL 엔터 후 일어나는 일
 
