@@ -1,7 +1,7 @@
 ---
 layout: post
 title: HTTP 란
-tags: [basicCS, network]
+tags: [basicCS, network, developerRoadMap]
 ---
 
 HTTP 란 무엇인가?
