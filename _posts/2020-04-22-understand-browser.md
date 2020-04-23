@@ -26,9 +26,9 @@ URL 엔터 후 일어나는 일
     
 
 #### 4. DNS 조회 
-    요청 보내기 전 Domain cache 되어 있는지 확인
-    없으면 로컬 hosts 파일에서 참조 가능한 Domain 있는지 확인 
-    1,2 둘 다 없으면 network stack에 구성돼 있는 DNS로 요청을 보냄. 일반적으로 Local router, ISP 캐싱 DNS
+    1. 요청 보내기 전 Domain cache 되어 있는지 확인
+    2. 없으면 로컬 hosts 파일에서 참조 가능한 Domain 있는지 확인 
+    3. 1,2 둘 다 없으면 network stack에 구성돼 있는 DNS로 요청을 보냄. 일반적으로 Local router, ISP 캐싱 DNS
 
 
 #### 5. ARP로 대상 IP & MAC Address를 알아낸다.
