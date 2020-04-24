@@ -166,6 +166,7 @@ paginate: 5
 
 kramdown:
   input: GFM
+  # hard_wrap: false # 엔터키
 
 # Default YAML values (more information on Jekyll's site)
 defaults:
