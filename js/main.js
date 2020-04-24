@@ -49,9 +49,11 @@ var main = {
         var parent = $(menus[i]).find(".navlinks-parent");
         var children = $(menus[i]).find(".navlinks-children a");
         var words = [];
-        $.each(children, function(idx, el) { words = words.concat($(el).text().trim().split(/\s+/)); });
+        // $.each(children, function(idx, el) { words = words.concat($(el).text().trim().split(/\s+/)); });
+        $.each(children, function(idx, el) { words = words.concat($(el).text().trim()); });
         var maxwidth = 0;
         $.each(words, function(id, word) {
+          console.log(word);
           fakeMenu.html("<a>" + word + "</a>");
           var width =  fakeMenu.width();
           if (width > maxwidth) {
