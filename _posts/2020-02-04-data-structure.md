@@ -1,6 +1,7 @@
 ---
 layout: post
 title: 자료구조 정렬
+tags: [dataStructure]
 ---
 
 2020/02/04

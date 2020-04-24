@@ -32,26 +32,43 @@
           <li><a href="{{ link[1] | relative_url }}">{{ link[0] }}</a></li>
         {%- endif -%}
       {%- endfor -%}
+      <!-- 태그 카테고리 -->
+      {%- capture site_tags -%}
+      {%- for tag in site.tags -%}
+          {{- tag | first -}}{%- unless forloop.last -%},{%- endunless -%}
+      {%- endfor -%}
+      {%- endcapture -%}
+      {%- assign tags_list = site_tags | split:',' | sort -%}
+
+        {% if tags_list.size > 0 %}
+        <li class="navlinks-container">
+          <a class="navlinks-parent" href="javascript:void(0)">Tags</a>
+          <div class="navlinks-children abs-right-align">
+            {%- for tag in tags_list -%}
+            <a href="/tags/#{{- tag -}}">{{- tag -}}&nbsp;({{site.tags[tag].size}})</a>
+            {%- endfor -%}
+          </div>
+        </li>
+        {% endif %}
       </ul>
     </div>
 
-	{% if page.image and (layout.show-avatar or page.show-avatar) %}
-	<div class="avatar-container">
-	  <div class="avatar-img-border">
-	    <a href="{{ '' | absolute_url }}">
-	      <img class="avatar-img" src="{{ page.image | relative_url }}" />
-		</a>
-	  </div>
-	</div>
-	{% elsif site.avatar and (layout.show-avatar or page.show-avatar) %}
-	<div class="avatar-container">
-	  <div class="avatar-img-border">
-	    <a href="{{ '' | absolute_url }}">
-	      <img class="avatar-img" src="{{ site.avatar | relative_url }}" />
-		</a>
-	  </div>
-	</div>
-	{% endif %}
-
+    {% if page.image and (layout.show-avatar or page.show-avatar) %}
+    <div class="avatar-container">
+      <div class="avatar-img-border">
+        <a href="{{ '' | absolute_url }}">
+          <img class="avatar-img" src="{{ page.image | relative_url }}" />
+      </a>
+      </div>
+    </div>
+    {% elsif site.avatar and (layout.show-avatar or page.show-avatar) %}
+    <div class="avatar-container">
+      <div class="avatar-img-border">
+        <a href="{{ '' | absolute_url }}">
+          <img class="avatar-img" src="{{ site.avatar | relative_url }}" />
+      </a>
+      </div>
+    </div>
+    {% endif %}
   </div>
 </nav>

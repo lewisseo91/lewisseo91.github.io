@@ -20,6 +20,7 @@ description: personal reports and notes
 
 # List of links in the navigation bar
 navbar-links:
+  # Tags: ['aboutme', 'projects']
   About Me: "aboutme"
   Projects: "projects"
   Resources:

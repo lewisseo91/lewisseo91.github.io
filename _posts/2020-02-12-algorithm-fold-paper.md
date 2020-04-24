@@ -1,6 +1,7 @@
 ---
 layout: post
 title: 종이접기
+tags: [algorithm]
 ---
 
 2020/02/12

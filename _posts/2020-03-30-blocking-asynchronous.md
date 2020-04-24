@@ -1,7 +1,7 @@
 ---
 layout: post
 title: 논블로킹 & 블로킹, 비동기 & 동기
-tags: [basic-CS]
+tags: [basicCS]
 ---
 
 블로킹 & 논블로킹, 비동기 & 동기 차이
