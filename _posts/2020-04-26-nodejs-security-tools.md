@@ -1,6 +1,6 @@
 ---
 layout: post
-title: node 필요했던 또는 유용했던 모듈들
+title: nodejs 필요했던 또는 유용했던 모듈들
 tags: [nodejs]
 ---
 
