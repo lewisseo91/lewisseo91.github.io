@@ -72,10 +72,16 @@ tags: [nodejs]
  7. passport.js
   
   - 인증 미들웨어
+   - passport-local : 쿠키-세션으로 인증
+   - passport-jwt : jwt 인증
+   ... 등등 (passport-github)
+  - 순서 : 유저 모델 생성 -> passport 선언 -> passport-local, passport-jwt 설정 -> 사용 
 
 ### 참고 자료 
- - [https://m.blog.naver.com/PostView.nhn?blogId=cck223&logNo=221019399455](https://m.blog.naver.com/PostView.nhn?blogId=cck223&logNo=221019399455&proxyReferer=https:%2F%2Fwww.google.com%2F)
- - [https://expressjs.com/en/advanced/best-practice-security.html](https://expressjs.com/en/advanced/best-practice-security.html)
- - [https://medium.com/@chullino/1분-패키지-소개-body-parser를-소개합니다-하지만-body-parser를-쓰지-마세요-bc3cbe0b2fd](https://medium.com/@chullino/1%EB%B6%84-%ED%8C%A8%ED%82%A4%EC%A7%80-%EC%86%8C%EA%B0%9C-body-parser%EB%A5%BC-%EC%86%8C%EA%B0%9C%ED%95%A9%EB%8B%88%EB%8B%A4-%ED%95%98%EC%A7%80%EB%A7%8C-body-parser%EB%A5%BC-%EC%93%B0%EC%A7%80-%EB%A7%88%EC%84%B8%EC%9A%94-bc3cbe0b2fd)
- - [https://velopert.com/2389](https://velopert.com/2389)
- - [https://velopert.com/2448](https://velopert.com/2448)
+ - helmet, session[https://m.blog.naver.com/PostView.nhn?blogId=cck223&logNo=221019399455](https://m.blog.naver.com/PostView.nhn?blogId=cck223&logNo=221019399455&proxyReferer=https:%2F%2Fwww.google.com%2F)
+ - helmet, session [https://expressjs.com/en/advanced/best-practice-security.html](https://expressjs.com/en/advanced/best-practice-security.html)
+ - body-parser [https://medium.com/@chullino/1분-패키지-소개-body-parser를-소개합니다-하지만-body-parser를-쓰지-마세요-bc3cbe0b2fd](https://medium.com/@chullino/1%EB%B6%84-%ED%8C%A8%ED%82%A4%EC%A7%80-%EC%86%8C%EA%B0%9C-body-parser%EB%A5%BC-%EC%86%8C%EA%B0%9C%ED%95%A9%EB%8B%88%EB%8B%A4-%ED%95%98%EC%A7%80%EB%A7%8C-body-parser%EB%A5%BC-%EC%93%B0%EC%A7%80-%EB%A7%88%EC%84%B8%EC%9A%94-bc3cbe0b2fd)
+ - jwt [https://velopert.com/2389](https://velopert.com/2389)
+ - jwt [https://velopert.com/2448](https://velopert.com/2448)
+ - passport 인증[https://velog.io/@ground4ekd/nodejs-passport](https://velog.io/@ground4ekd/nodejs-passport)
+ - passport-jwt [https://medium.com/front-end-weekly/learn-using-jwt-with-passport-authentication-9761539c4314](https://medium.com/front-end-weekly/learn-using-jwt-with-passport-authentication-9761539c4314)
