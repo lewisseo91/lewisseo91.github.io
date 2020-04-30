@@ -1,13 +1,13 @@
 ---
 layout: page
-title: About me
-subtitle: Who's Lewis Seo
+# title: About me
+# subtitle: Who's Lewis Seo
 ---
 
 이름 : 서동현 (Donghyun Seo Lewis)
 
-### my history
 
-<!-- To be honest, I'm having some trouble remembering right now, so why don't you just watch [my movie](http://en.wikipedia.org/wiki/The_Princess_Bride_%28film%29) and it will answer **all** your questions. -->
-
+<div>
+    <h3>지속 가능한 서비스를 지향하는 프론트엔드 개발자 서동현입니다.</h3>
+</div>
 
