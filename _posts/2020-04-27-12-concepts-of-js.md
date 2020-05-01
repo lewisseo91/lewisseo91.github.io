@@ -1,6 +1,6 @@
 ---
 layout: post
-title: javascript 클래스와 closure의 차이
+title: javascript class와 closure의 차이
 tags: [javascript]
 ---
 
