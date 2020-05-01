@@ -13,14 +13,14 @@ tags: [javascript]
 
 <br />
 
-#### JS는 class 와 closure 를 모두 지원하고, 두 개의 패턴 모두 "arguably" 같다. 적어도 비슷한 상황에서 비슷한 효과를 낸다고 말할 수 있다. 
-
+#### Javascript는 class 와 closure 를 모두 지원하고, 두 개의 패턴 모두 "arguably" 같다. 
+#### 적어도 비슷한 상황에서 비슷한 효과를 낸다고 말할 수 있다. 
 #### 그래도 둘이 완벽히 같은 것은 아니다. 차이점을 알아보도록 하자.
 
 <br />
 
 #### <center>1. closure 패턴은 class 패턴보다 좀 더 lintable 하다.</center>
-#### [Javascript Classes v. Closures (1/3)](https://medium.com/engineering-livestream/javascript-classes-vs-closures-cf6d6c1473f)
+#### <center> <a href="https://medium.com/engineering-livestream/javascript-classes-vs-closures-cf6d6c1473f">Javascript Classes v. Closures (1/3)</a> </center>
 
 <br />
 
@@ -28,7 +28,7 @@ tags: [javascript]
  
  - 같은 패턴 안에서 스펠링 오류가 발생할 경우 closure는 linter에서 잡을 수 있는 반면, class에서는 탐지하지 못한다.
  
- - 왜냐하면 javascript object(객체)가 anarchy 하기 때문.
+ - 왜냐하면 javascript object(객체)가 anarchy (무법자 스타일) 하기 때문.
 
  - class를 만약에 누가 스펠링 오류로 된 다른 객체를 생성할 경우 완벽하게 유효하게 된다. (그러나 잘못쓰이고 있는 것.)
 
@@ -41,7 +41,7 @@ tags: [javascript]
 <br />
 
 #### <center>2. class 패턴은 closure 패턴보다 좀 더 잘 작동한다.</center>
-#### [Javascript Classes v. Closures (2/3)](https://medium.com/engineering-livestream/javascript-classes-v-closures-2-3-9fa3b1296b16)
+#### <center> <a href="https://medium.com/engineering-livestream/javascript-classes-v-closures-2-3-9fa3b1296b16">Javascript Classes v. Closures (2/3)</a> </center>
 
 <br />
 
@@ -98,7 +98,7 @@ tags: [javascript]
 <br />
 
 #### <center>3. Mocking 과 Monkey-patchings</center>
-#### [Javascript Classes vs. Closures (3/3)](https://medium.com/engineering-livestream/javascript-classes-vs-closures-3-3-9d9233eb0a5c)
+#### <center> <a href="https://medium.com/engineering-livestream/javascript-classes-vs-closures-3-3-9d9233eb0a5c">Javascript Classes vs. Closures (3/3)</a> </center>
 
 <br />
 
