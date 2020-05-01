@@ -4,9 +4,10 @@ title: 유용한 regex
 tags: [javascript, regex]
 ---
 
-**아래 분문은**
-**[https://welchsy.tistory.com/22](https://welchsy.tistory.com/22)**
-**[https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Regular_Expressions](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Regular_Expressions)글을 참조하였습니다.**
+#### 아래 분문은
+#### - [https://welchsy.tistory.com/22](https://welchsy.tistory.com/22)
+#### - [https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Regular_Expressions](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Regular_Expressions)
+#### 글을 참조하였습니다.
 
 <br />
 
