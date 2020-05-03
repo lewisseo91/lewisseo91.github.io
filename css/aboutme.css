@@ -1,0 +1,442 @@
+/* 공통 세팅 */
+footer {
+    margin-top: 0; /* 이상한 거 껴 있네*/
+}
+
+p {
+    margin: 0 0 10px; /* 이상한 거 껴 있네*/
+}
+
+    /* 해당 페이지 액션 달라서 */
+a:hover, a:focus {
+    text-decoration: none;
+    color: black;
+}
+a:visited {
+    text-decoration: none;
+    color: black;
+}
+
+.row {
+    margin: 0;
+}
+
+h1, .h1, h2, .h2, h3, .h3  {
+    margin-top: 10px;
+}
+
+.modal-aboutme {
+    max-width: 800px;
+    margin: 10rem auto;
+    width: 95%;
+    word-break: keep-all;
+}
+
+.modal-link-icon-size {
+    font-size: 1.5rem;
+    margin-left: 0.5rem;
+    cursor: pointer;
+}
+
+.modal-aboutme-pic {
+    text-align: center;
+}
+
+.modal-aboutme-img {
+    max-height: 40rem;
+}
+
+.gradient-background {
+    background: linear-gradient(60deg, #fff, #E2F5FE, #23a6d5, #e73c7e);
+    background-size: 400% 400%;
+    animation: gradient 15s ease infinite;
+}
+
+.gradient-color {
+    animation: gradient-color 15s ease infinite;
+}
+
+.white_background {
+    background: white;
+    margin: 0 -15px;
+}
+
+.margin-between-section {
+    margin: 3rem 0;
+}
+
+.padding-between-section {
+    padding: 3rem 0;
+}
+
+.aboutme-common-title {
+    text-align: center;
+    /* font-style: italic; */
+}
+/* background: linear-gradient(#fff, #E2F5FE); */
+/* background: linear-gradient(#E2F5FE, #fff); */
+/* background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab); */
+/* background-size: 400% 400%; */
+/* animation: gradient 15s ease infinite; */
+/* background-size: 200% 200%; */
+.aboutme-introduce {
+    min-height: 70vh;
+    /* padding: 0 15px; */
+}
+.aboutme-phrase-content {
+    font-style:italic;
+    /* color: rgba(53, 53, 53, 0.9); */
+    /* animation: gradient-color 15s ease infinite; */
+    font-size: 1.8rem;
+    font-weight: 700;
+}
+.aboutme-profile {
+    display: flex;
+    align-items: flex-end;
+}
+
+.aboutme-profile-block {
+    height: 100%;
+    display: flex;
+    margin-bottom: 3rem;
+}
+
+.aboutme-profile-summary-block {
+    width: 100%;
+    align-self: center;
+}
+
+.aboutme-profile-pic-block {
+    width: 100%;
+    /* height: 100%; */
+    max-width: 30rem;
+    max-height: 30rem;
+    margin: 0 auto;
+    /* position: absolute; */
+    /* right: 0; */
+    /* top: 0; */
+}
+
+.aboutme-profile-pic-block .aboutme-profile-pic {
+    max-height: 85%;
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+    border-radius: 50%;
+}
+
+.aboutme-skills {
+    min-height: 30vh;
+    margin-top: -15rem;
+}
+
+.aboutme-skills-cover {
+    background: white;
+    border: 1px solid #E6ECF8;
+    border-radius: 15px;
+    padding: 0;
+}
+
+.aboutme-skills-title {
+    margin: 3rem 0;
+}
+
+.aboutme-skills-block {
+    display: flex;
+    border-top: 1px solid #e6ecf8;
+}
+
+.aboutme-skills-half {
+    width: 100%;
+    text-align: center;
+    padding: 70px 45px;
+}
+
+.aboutme-skills-half:nth-child(odd) {
+    border-right: 1px solid #e6ecf8;
+    border-bottom: none;
+}
+
+
+.aboutme-skills-pic {
+    margin: 0 auto 2em;
+}
+
+.aboutme-skills-img {
+    width: 5rem;
+    height: 5rem;
+}
+
+.aboutme-skills-list-title {
+    font-weight: 700;
+    margin: 3rem 0;
+}
+
+.aboutme-skills-items {
+    list-style: none;
+    text-align: center;
+    padding: 0;
+}
+
+.aboutme-skills-item {
+    margin: 10px 0;
+}
+
+.aboutme-timeline {
+    min-height: 30vh;
+}
+
+.aboutme-timeline-panel {
+    position: relative;
+    /* top: -4.5rem; */
+    /* background: white; */
+    /* border: 1px solid #f5f5f5; */
+    border-radius: 15px;
+}
+
+/* timeline */
+.aboutme-timeline-block {
+    position: relative;
+    max-width: 1200px;
+    margin: 3rem auto;
+    /* background : #474e5d; */
+    border-radius: 14px;
+  }
+  
+  .aboutme-timeline-block::after {
+    content: '';
+    position: absolute;
+    width: 6px;
+    background-color: green;
+    opacity: 0.3;
+    top: 0;
+    bottom: 0;
+    left: 50%;
+    margin-left: -3px;
+  }
+  
+  .aboutme-timeline-content-block {
+    display: inline-block;
+    padding: 10px 40px;
+    position: relative;
+    background-color: inherit;
+    width: 50%;
+  }
+  
+  .aboutme-timeline-content-block::after {
+    content: '';
+    position: absolute;
+    width: 25px;
+    height: 25px;
+    right: -12.5px;
+    background-color: white;
+    border: 4px solid #FF9F55;
+    top: 15px;
+    border-radius: 50%;
+    z-index: 1;
+  }
+
+  .aboutme-timeline-link {
+      color: black;
+      text-decoration: none;
+  }
+  
+  .aboutme-timeline-left {
+    left: 0;
+  }
+  
+  .aboutme-timeline-right {
+    left: 50%;
+  }
+  
+  .aboutme-timeline-left::before {
+    content: " ";
+    height: 0;
+    position: absolute;
+    top: 22px;
+    width: 0;
+    z-index: 1;
+    right: 30px;
+    border: medium solid oldlace;
+    border-width: 10px 0 10px 10px;
+    border-color: transparent transparent transparent oldlace;
+  }
+  
+  .aboutme-timeline-right::before {
+    content: " ";
+    height: 0;
+    position: absolute;
+    top: 22px;
+    width: 0;
+    z-index: 1;
+    left: 30px;
+    border: medium solid oldlace;
+    border-width: 10px 10px 10px 0;
+    border-color:  transparent oldlace transparent transparent;
+  }
+  
+  .aboutme-timeline-right::after {
+    left: -16px;
+  }
+  
+  .aboutme-timeline-content {
+    padding: 20px 30px;
+    background-color: oldlace;
+    position: relative;
+    border-radius: 6px;
+  }
+
+  .aboutme-projects-cover {
+    /* background: white; */
+    /* border-radius: 15px; */
+    /* padding: 3rem 0; */
+    /* border: 1px solid #f5f5f5; */
+  }
+
+  .aboutme-projects-content {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+  }
+
+  .aboutme-projects-content-block {
+        width: 31.5rem;
+        margin: 1rem;
+        border: 2px solid #f5f5f5;
+        border-radius: 5px;
+        cursor: pointer;
+        transition: box-shadow 0.17s ease-in-out;
+  }
+
+  .aboutme-projects-content-block:hover {
+    box-shadow: 0 19px 38px rgba(0,0,0,0.30), 0 15px 12px rgba(0,0,0,0.22);
+  }
+
+  .aboutme-projects-content-link {
+      color: black;
+      text-decoration: none;
+  }
+
+  .aboutme-projects-content-pic {
+    text-align: center;
+      padding: 1rem;
+  }
+
+  .aboutme-projects-content-img {
+      height: 25rem;
+  }
+
+  .aboutme-projects-content-summary {
+      text-align: center;
+      padding: 1rem;
+  }
+  
+  @media screen and (max-width: 768px) {
+        
+    .aboutme-skills-cover {
+        width: 80%;
+        margin: 0 auto;
+        background: white;
+        border: 1px solid #E6ECF8;
+        border-radius: 15px;
+        padding: 0;
+    }
+    
+    .aboutme-projects-content-block {
+        width: 60%;
+        min-width: 30rem;
+        margin: 3rem auto;
+    }
+
+    .aboutme-timeline-block::after {
+    left: 31px;
+    }
+    
+    .aboutme-timeline-content-block {
+    width: 100%;
+    padding-left: 70px;
+    padding-right: 25px;
+    }
+    
+    .aboutme-timeline-content-block::before {
+    left: 60px;
+    border: medium solid oldlace;
+    border-width: 10px 10px 10px 0;
+    border-color: transparent oldlace transparent transparent;
+    }
+  
+    .aboutme-timeline-left::after, .aboutme-timeline-right::after {
+    left: 17.5px;
+    }
+
+    .aboutme-timeline-right {
+    left: 0%;
+    }
+  }
+
+@media screen and (max-width: 1024px) {
+    .aboutme-profile-pic-block {
+        width: 100%;
+    }
+    .aboutme-profile-block {
+        width: 100%;
+    }
+    .aboutme-profile-block .aboutme-profile-pic {
+        max-height: 80%;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+    }
+    .aboutme-profile-block {
+        flex-wrap: wrap;
+    }
+    .aboutme-profile-summary-block {
+        width: 100%;
+        order: 2;
+    }
+    .aboutme-profile-pic-block {
+        width: 100%;
+        order : 1;
+    }
+
+    .aboutme-skills-block {
+        display: flex;
+        flex-flow: wrap;
+        border-top: 1px solid #e6ecf8;
+    }
+
+    .aboutme-skills-half:nth-child(odd) {
+        border-right: none;
+        border-bottom: 1px solid #e6ecf8;
+    }
+
+    .aboutme-projects-content-block {
+        width: 60%;
+        min-width: 30rem;
+        margin: 3rem auto;
+    }
+}
+    
+@keyframes gradient {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+@keyframes gradient-color {
+    0% {
+        color: rgba(53, 53, 53, 0.9);
+    }
+    50% {
+        color: #fff;
+    }
+    100% {
+        color: rgba(53, 53, 53, 0.9);
+    }
+}

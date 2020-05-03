@@ -92,6 +92,10 @@ img {
   max-width: 100%;
 }
 
+.word-keep-all {
+  word-break: keep-all;
+}
+
 .disqus-comments {
   margin-top: 30px;
 }
@@ -110,8 +114,10 @@ img {
 /* --- Navbar --- */
 
 .navbar-custom {
-  background-color: {{ site.navbar-col }};
-  border-bottom: 1px solid #EAEAEA;
+  /* background-color: {{ site.navbar-col }}; */
+  /* border-bottom: 1px solid #EAEAEA; */
+  background-color: white;
+  border-bottom: none;
   font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
   {% if site.navbar-img %}
   background-image: url({{ site.navbar-img | relative_url }});

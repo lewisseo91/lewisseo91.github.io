@@ -1,7 +1,7 @@
 # --- General options --- #
 
 # Name of website
-title: Lewis's Reports
+title: DH Lewis
 
 # Short description of your site
 description: personal reports and notes
@@ -183,6 +183,12 @@ defaults:
       path: "" # all files
     values:
       layout: "page"
+      show-avatar: true
+  -
+    scope:
+      path: "" # all files
+    values:
+      layout: "page-full"
       show-avatar: true
 
 # Use tags index page and make tags on each post clickable
