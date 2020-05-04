@@ -20,8 +20,8 @@ description: personal reports and notes
 
 # List of links in the navigation bar
 navbar-links:
-  # Tags: ['aboutme', 'projects']
   About Me: "aboutme"
+  Tags: true
   Projects: "projects"
   Resources:
  #   - Beautiful Jekyll: "http://deanattali.com/beautiful-jekyll/"

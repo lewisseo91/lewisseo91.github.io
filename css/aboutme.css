@@ -147,10 +147,15 @@ h1, .h1, h2, .h2, h3, .h3  {
     width: 100%;
     margin: auto;
     /* background: rgba(244, 244, 244, 0.75); */
-    background: linear-gradient(to right, rgba(256, 256, 256, 0.1), rgba(244, 244, 244, 1) 10%, rgba(244, 244, 244, 1) 90%, rgba(256, 256, 256, 0.1) 100%);
+    background: linear-gradient(to right, rgba(256, 256, 256, 0.1), rgba(256, 256, 256, 1) 10%, rgba(256, 256, 256, 1) 90%, rgba(256, 256, 256, 0.1) 100%);
     padding: 2rem 5rem;
     border-radius: 15px;
     word-break: keep-all;
+}
+
+.aboutme-profile-details-contents-block div p{
+    font-size: 1.9rem;
+    padding: 0 3rem;
 }
 
 .aboutme-skills {
@@ -360,7 +365,8 @@ h1, .h1, h2, .h2, h3, .h3  {
     padding: 1rem;
 }
 
-    @media screen and (max-width: 1024px) {
+    /* 태블릿 까지 */
+    @media only screen and (max-width: 1023px) {
 
         .aboutme-profile-pic-block {
             width: 100%;
@@ -379,12 +385,23 @@ h1, .h1, h2, .h2, h3, .h3  {
         }
 
         .aboutme-profile-details-block {
-            width: 100%;
-            flex-wrap: wrap;
+            /* width: 100%; */
+            /* flex-wrap: wrap; */
         }
 
         .aboutme-profile-details-contents-block {
-            width: 60%;
+            width: 100%;
+            margin: auto;
+            background: transparent;
+            padding: 2rem 2rem;
+            border-radius: 0px;
+            word-break: keep-all;
+            color: navy;
+        }
+        
+        .aboutme-profile-details-contents-block div p{
+            font-size: initial;
+            padding: 0 3rem;
         }
 
         .aboutme-profile-summary-block {
@@ -403,7 +420,7 @@ h1, .h1, h2, .h2, h3, .h3  {
         }
 
         .aboutme-skills-cover {
-            width: 60%;
+            width: 75%;
             margin: 0 auto;
             background: white;
             border: 1px solid #E6ECF8;
@@ -430,7 +447,8 @@ h1, .h1, h2, .h2, h3, .h3  {
 
     }
   
-    @media screen and (max-width: 768px) {
+    /* 모바일만 */
+    @media only screen and (max-width: 768px) {
     
         .aboutme-projects-content-block {
             width: 60%;

@@ -1,3 +1,11 @@
+
+<!-- 태그 카테고리 -->
+{%- capture site_tags -%}
+{%- for tag in site.tags -%}
+  {{- tag | first -}}{%- unless forloop.last -%},{%- endunless -%}
+{%- endfor -%}
+{%- endcapture -%}
+<!-- 태그 카테고리 끝-->
 <nav class="navbar navbar-default navbar-fixed-top navbar-custom">
   <div class="container-fluid">
     <div class="navbar-header">
@@ -17,7 +25,21 @@
     <div class="collapse navbar-collapse" id="main-navbar">
       <ul class="nav navbar-nav navbar-right">
       {%- for link in site.navbar-links -%}
-        {%- if link[1].first %}
+        {% if link[0] == "Tags" %}
+        <!-- 태그 카테고리 -->
+        {%- assign tags_list = site_tags | split:',' | sort -%}
+        {% if tags_list.size > 0 %}
+        <li class="navlinks-container">
+          <a class="navlinks-parent text-uppercase" href="javascript:void(0)">Tags</a>
+          <div class="navlinks-children abs-right-align">
+            {%- for tag in tags_list -%}
+            <a class="text-capitalize" href="/tags/#{{- tag -}}">{{- tag -}}&nbsp;({{site.tags[tag].size}})</a>
+            {%- endfor -%}
+          </div>
+        </li>
+        {% endif %}
+        <!-- 태그 카테고리 끝-->
+        {%- elsif link[1].first %}
           <li class="navlinks-container">
             <a class="navlinks-parent text-uppercase" href="javascript:void(0)">{{ link[0] }}</a>
             <div class="navlinks-children">
@@ -32,24 +54,6 @@
           <li><a class="text-uppercase" href="{{ link[1] | relative_url }}">{{ link[0] }}</a></li>
         {%- endif -%}
       {%- endfor -%}
-      <!-- 태그 카테고리 -->
-      {%- capture site_tags -%}
-      {%- for tag in site.tags -%}
-          {{- tag | first -}}{%- unless forloop.last -%},{%- endunless -%}
-      {%- endfor -%}
-      {%- endcapture -%}
-      {%- assign tags_list = site_tags | split:',' | sort -%}
-
-        {% if tags_list.size > 0 %}
-        <li class="navlinks-container">
-          <a class="navlinks-parent text-uppercase" href="javascript:void(0)">Tags</a>
-          <div class="navlinks-children abs-right-align">
-            {%- for tag in tags_list -%}
-            <a class="text-capitalize" href="/tags/#{{- tag -}}">{{- tag -}}&nbsp;({{site.tags[tag].size}})</a>
-            {%- endfor -%}
-          </div>
-        </li>
-        {% endif %}
       </ul>
     </div>
 
