@@ -40,6 +40,10 @@ h1, .h1, h2, .h2, h3, .h3  {
     word-break: keep-all;
 }
 
+.modal-aboutme-detail {
+    margin-left: 2.5rem;
+}
+
 .modal-link-icon-size {
     font-size: 1.5rem;
     margin-left: 0.5rem;
@@ -193,6 +197,10 @@ h1, .h1, h2, .h2, h3, .h3  {
     border-bottom: none;
 }
 
+.aboutme-skill-title {
+    font-size: 2.4rem;
+    font-weight: bold;
+}
 
 .aboutme-skills-pic {
     margin: 0 auto 2em;
@@ -271,6 +279,14 @@ h1, .h1, h2, .h2, h3, .h3  {
     top: 15px;
     border-radius: 50%;
     z-index: 1;
+}
+
+.aboutme-timeline-content-phrase {
+    font-size: 1.5rem;
+}
+
+.aboutme-timeline-content-details {
+    font-size: 1.5rem;
 }
 
 .aboutme-timeline-link {
@@ -419,27 +435,32 @@ h1, .h1, h2, .h2, h3, .h3  {
             
         .aboutme-skills {
             min-height: 30vh;
-            margin-top: -5rem;
+            margin-top: -3rem;
         }
 
         .aboutme-skills-cover {
-            width: 75%;
+            /* width: 75%; */
             margin: 0 auto;
             background: white;
-            border: 1px solid #E6ECF8;
-            border-radius: 15px;
+            border: none;
+            border-radius: 0px;
             padding: 0;
         }
 
         .aboutme-skills-block {
             display: flex;
-            flex-flow: wrap;
-            border-top: 1px solid #e6ecf8;
+            flex-flow: nowrap;
+            border-top: none;
         }
 
         .aboutme-skills-half:nth-child(odd) {
-            border-right: none;
-            border-bottom: 1px solid #e6ecf8;
+            /* border-right: none; */
+            /* border-bottom: 1px solid #e6ecf8; */
+        }
+
+        .aboutme-skill-title {
+            font-size: 1.9rem;
+            font-weight: 700;
         }
 
         .aboutme-projects-content-block {
@@ -452,7 +473,15 @@ h1, .h1, h2, .h2, h3, .h3  {
   
     /* 모바일만 */
     @media only screen and (max-width: 768px) {
-    
+
+        .aboutme-phrase-content {
+            font-style:italic;
+            /* color: rgba(53, 53, 53, 0.9); */
+            /* animation: gradient-color 15s ease infinite; */
+            font-size: 1.8rem;
+            font-weight: 700;
+            word-break: keep-all;
+        }
         .aboutme-projects-content-block {
             width: 60%;
             min-width: 30rem;

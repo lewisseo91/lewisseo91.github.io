@@ -13,10 +13,10 @@ layout: page-full
                 </p>
             </div>
         </section>
-        <section class="row aboutme-profile-details">
+        <section class="row aboutme-profile-details m-none">
             <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1 aboutme-profile-details-block">
                 <div class="text-center aboutme-profile-details-contents-block">
-                    <div class="">
+                    <div>
                         <p>
                             안녕하세요, 프론트 개발자 서동현입니다. <br />
                             프로그램은 그 규모가 커지면 커질수록 협업의 중요성은 비례해 늘어나고, <br />
@@ -55,8 +55,8 @@ layout: page-full
                         <div class="aboutme-skills-pic">
                             <img src="/img/fe_icon.svg" alt="frontendIcon" class="aboutme-skills-img">
                         </div>
-                        <div>
-                            <h3>프론트엔드</h3>
+                        <div class="aboutme-skill-title">
+                            <span>프론트엔드</span>
                         </div>
                         <div>
                             <div class="aboutme-skills-list-title">
@@ -68,10 +68,10 @@ layout: page-full
                                 <li class="aboutme-skills-item">javascript</li>
                                 <li class="aboutme-skills-item">typescript</li>
                             </ul>
-                            <div class="aboutme-skills-list-title">
+                            <div class="aboutme-skills-list-title m-none">
                                 협업 툴
                             </div>
-                            <ul class="aboutme-skills-items">
+                            <ul class="aboutme-skills-items m-none">
                                 <li class="aboutme-skills-item">github</li>
                                 <li class="aboutme-skills-item">slack</li>
                             </ul>
@@ -81,8 +81,8 @@ layout: page-full
                         <div class="aboutme-skills-pic">
                             <img src="/img/be_icon.svg" alt="backendIcon" class="aboutme-skills-img">
                         </div>
-                        <div>
-                            <h3>백엔드</h3>
+                        <div class="aboutme-skill-title">
+                            <span>백엔드</span>
                         </div>
                         <div>
                             <div class="aboutme-skills-list-title">
@@ -94,10 +94,10 @@ layout: page-full
                                 <li class="aboutme-skills-item">mongoDB</li>
                                 <li class="aboutme-skills-item">AWS EC2, S3</li>
                             </ul>
-                            <div class="aboutme-skills-list-title">
+                            <div class="aboutme-skills-list-title m-none">
                                 협업 툴
                             </div>
-                            <ul class="aboutme-skills-items">
+                            <ul class="aboutme-skills-items m-none">
                                 <li class="aboutme-skills-item">github</li>
                                 <li class="aboutme-skills-item">slack</li>
                                 <li class="aboutme-skills-item">draw.io(워크 플로우)</li>
@@ -140,7 +140,7 @@ layout: page-full
                                         <div class="margin-between-section">
                                             <h3>- 소개</h3>
                                         </div>
-                                        <p>
+                                        <p class="modal-aboutme-detail">
                                             유저간 랭킹 생성 및 투표를 통해 관심사, 기호, 취향을 공유하는 사이트<br/>
                                             페이지당 이미지숫자가 많아 다운로드 속도 및 페이지당 처리용량 문제발생<br/>
                                             <b>router lazy loading, image lazy loading, optimization</b>을 수행, 적용 후<br/>
@@ -196,7 +196,7 @@ layout: page-full
                                         <div class="margin-between-section">
                                             <h3>- 소개</h3>
                                         </div>
-                                        <p>
+                                        <p class="modal-aboutme-detail">
                                             실시간 교정/번역 서비스<br/>
                                             <b>채팅 서비스 리팩토링</b> - socket.io<br/>
                                             아임포트 이용 <b>결제서비스 부착, mongoDB 로그 저장</b> - restAPI, webHook<br/>
@@ -252,7 +252,7 @@ layout: page-full
                                         <div class="margin-between-section">
                                             <h3>- 소개</h3>
                                         </div>
-                                        <p>
+                                        <p class="modal-aboutme-detail">
                                             워드프레스로 구현한 STMCO 회사 소개 사이트<br/>
                                             기본 슬라이더 + Tag & Filter 이용한 <b>3중 카테고리 썸네일 슬라이더</b> 구현<br/>
                                         </p>
@@ -291,10 +291,10 @@ layout: page-full
                     <div class="aboutme-timeline-content-block aboutme-timeline-left">
                         <a class="aboutme-timeline-link" href="https://rankus.kr" target="_blank" style="text-decoration: none;">
                             <div class="aboutme-timeline-content word-keep-all pointer">
-                                <h2>2020.01 - 현재</h2>
-                                <h3>RankUs</h3>
-                                <p>P2P 랭킹 투표 서비스</p>
-                                <ul>
+                                <span class="aboutme-timeline-content-date">2020.01 - 현재</span>
+                                <h4>RankUs</h4>
+                                <p class="aboutme-timeline-content-phrase">P2P 랭킹 투표 서비스</p>
+                                <ul class="aboutme-timeline-content-details">
                                     <li>사이트 제작 및 운영</li>
                                     <li>코드 리팩토링</li>
                                     <li>이미지, 로딩속도 최적화 및 압축작업</li>
@@ -306,10 +306,10 @@ layout: page-full
                     <div class="aboutme-timeline-content-block aboutme-timeline-right">
                         <a class="aboutme-timeline-link" href="https://hellolang.com" target="_blank" style="text-decoration: none;">
                             <div class="aboutme-timeline-content word-keep-all">
-                                <h2>2017.10 - 현재</h2>
-                                <h3>Hellolang</h3>
-                                <p>실시간 번역/교정 서비스</p>
-                                <ul>
+                                <span class="aboutme-timeline-content-date">2017.10 - 현재</span>
+                                <h4>Hellolang</h4>
+                                <p class="aboutme-timeline-content-phrase">실시간 번역/교정 서비스</p>
+                                <ul class="aboutme-timeline-content-details">
                                     <li>운영 및 기능추가</li>
                                     <li>실시간 채팅 리팩토링, 신고 서비스 추가 및 변경</li>
                                     <li>결제 서비스 부착(국내, 국외) - 아임포트 api 이용</li>
@@ -321,10 +321,10 @@ layout: page-full
                     <div class="aboutme-timeline-content-block aboutme-timeline-left">
                         <a class="aboutme-timeline-link" href="https://rankus.kr" target="_blank" style="text-decoration: none;">
                             <div class="aboutme-timeline-content word-keep-all pointer">
-                                <h2>2018 - 2018</h2>
-                                <h3>STMCO</h3>
-                                <p>회사소개 페이지</p>
-                                <ul>
+                                <span class="aboutme-timeline-content-date">2018 - 2018</span>
+                                <h4>STMCO</h4>
+                                <p class="aboutme-timeline-content-phrase">회사소개 페이지</p>
+                                <ul class="aboutme-timeline-content-details">
                                     <li>워드프레스 적용 및 운영</li>
                                     <li>3중 썸네일 슬라이더 적용(php raw code)</li>
                                 </ul>
@@ -334,10 +334,10 @@ layout: page-full
                     <div class="aboutme-timeline-content-block aboutme-timeline-right">
                         <a class="aboutme-timeline-link" href="https://hellolang.com" target="_blank" style="text-decoration: none;">
                             <div class="aboutme-timeline-content word-keep-all">
-                                <h2>2017.01 - 2017.08</h2>
-                                <h3>PHONCUS</h3>
-                                <p>휴대폰 선호 분석을 통한 휴대폰 추천 시스템</p>
-                                <ul>
+                                <span class="aboutme-timeline-content-date">2017.01 - 2017.08</span>
+                                <h4>PHONCUS</h4>
+                                <p class="aboutme-timeline-content-phrase">휴대폰 선호 분석을 통한 휴대폰 추천 시스템</p>
+                                <ul class="aboutme-timeline-content-details">
                                     <li>휴대폰 가격, 비용 , 크기 등등을 다변수 함수, 가산점을 이용해 산출</li>
                                     <li>angular2, Ionic</li>
                                 </ul>
@@ -347,23 +347,10 @@ layout: page-full
                     <div class="aboutme-timeline-content-block aboutme-timeline-left">
                         <a class="aboutme-timeline-link" href="https://rankus.kr" target="_blank" style="text-decoration: none;">
                             <div class="aboutme-timeline-content word-keep-all pointer">
-                                <h2>2010.03 - 2017.08</h2>
-                                <h3>부경대학교</h3>
-                                <p>IT융합응용공학과, 경영학과(복수전공)</p>
-                                <ul>
-                                    <li>4학년 휴학 중 해외에서 1년간 퍼블리셔 경험 (VRS Design)</li>
-                                    <li>해당 기간 Magento, Shopify EC platform 사용</li>
-                                </ul>
-                            </div>
-                        </a>
-                    </div>
-                    <div class="aboutme-timeline-content-block aboutme-timeline-right">
-                        <a class="aboutme-timeline-link" href="https://hellolang.com" target="_blank" style="text-decoration: none;">
-                            <div class="aboutme-timeline-content word-keep-all">
-                                <h2>2010.03 - 2017.08</h2>
-                                <h3>부경대학교</h3>
-                                <p>IT융합응용공학과, 경영학과(복수전공)</p>
-                                <ul>
+                                <span class="aboutme-timeline-content-date">2010.03 - 2017.08</span>
+                                <h4>부경대학교</h4>
+                                <p class="aboutme-timeline-content-phrase">IT융합응용공학과, 경영학과(복수전공)</p>
+                                <ul class="aboutme-timeline-content-details">
                                     <li>4학년 휴학 중 해외에서 1년간 퍼블리셔 경험 (VRS Design)</li>
                                     <li>해당 기간 Magento, Shopify EC platform 사용</li>
                                 </ul>
