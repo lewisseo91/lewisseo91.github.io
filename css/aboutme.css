@@ -189,7 +189,7 @@ h1, .h1, h2, .h2, h3, .h3  {
 .aboutme-skills-half {
     width: 100%;
     text-align: center;
-    padding: 70px 45px;
+    padding: 70px 35px;
 }
 
 .aboutme-skills-half:nth-child(odd) {
@@ -353,13 +353,49 @@ h1, .h1, h2, .h2, h3, .h3  {
 }
 
 .aboutme-projects-content-block {
+    position: relative;
     width: 35rem;
     margin: 2rem;
     background: white;
     border: 2px solid #f5f5f5;
     border-radius: 5px;
     cursor: pointer;
-    transition: box-shadow 0.17s ease-in-out;
+    transition: all 0.17s ease-in-out;
+}
+
+.aboutme-projects-content-block .aboutme-projects-modal-view {
+    position: absolute;
+    display: none;
+    top: 50%;
+    left: 50%;
+    z-index: 2;
+    transform: translate(-50%, -50%);
+}
+
+/* 데스크탑에선 보이지만 태블릿부터 안 보임 */
+.aboutme-projects-content-block:hover .aboutme-projects-modal-view{
+    display: block;
+}
+
+.aboutme-projects-content-block .aboutme-projects-modal-view .btn {
+    padding: 1.3rem 2.6rem;
+    border-radius: 15px;
+}
+
+.aboutme-projects-content-block:hover::after{
+    visibility: visible;
+}
+
+.aboutme-projects-content-block::after {
+    position: absolute;
+    visibility: hidden;
+    content: '';
+    width: 100%;
+    background-color: lightgray;
+    opacity: 0.6;
+    top: 0;
+    bottom: 0;
+    left: 0;
 }
 
 .aboutme-projects-content-block:hover {
@@ -398,7 +434,7 @@ h1, .h1, h2, .h2, h3, .h3  {
         }
 
         .aboutme-profile-block .aboutme-profile-pic {
-            max-height: 80%;
+            max-height: 85%;
             left: 50%;
             top: 50%;
             transform: translate(-50%, -50%);
@@ -467,6 +503,11 @@ h1, .h1, h2, .h2, h3, .h3  {
             width: 60%;
             min-width: 30rem;
             margin: 3rem auto;
+        }
+
+        /* 데스크탑에선 보이지만 태블릿부터 안 보임 */
+        .aboutme-projects-content-block:hover .aboutme-projects-modal-view{
+            display: none;
         }
 
     }
