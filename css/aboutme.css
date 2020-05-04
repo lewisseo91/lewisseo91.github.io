@@ -17,6 +17,10 @@ a:visited {
     color: black;
 }
 
+.fa-external-link:hover {
+    color: #337ab7;
+}
+
 .row {
     margin: 0;
 }
@@ -48,6 +52,12 @@ h1, .h1, h2, .h2, h3, .h3  {
 
 .gradient-background {
     background: linear-gradient(60deg, #fff, #E2F5FE, #23a6d5, #e73c7e);
+    background-size: 400% 400%;
+    animation: gradient 15s ease infinite;
+}
+
+.gradient-background2 {
+    background: linear-gradient(60deg, #fff, #E2F5FE, #CFEBF7, #87CEEB);
     background-size: 400% 400%;
     animation: gradient 15s ease infinite;
 }
@@ -87,8 +97,9 @@ h1, .h1, h2, .h2, h3, .h3  {
     font-style:italic;
     /* color: rgba(53, 53, 53, 0.9); */
     /* animation: gradient-color 15s ease infinite; */
-    font-size: 1.8rem;
+    font-size: 2.8rem;
     font-weight: 700;
+    word-break: keep-all;
 }
 .aboutme-profile {
     display: flex;
@@ -123,6 +134,23 @@ h1, .h1, h2, .h2, h3, .h3  {
     top: 50%;
     transform: translateY(-50%);
     border-radius: 50%;
+}
+
+.aboutme-profile-details-block {
+    display: flex;
+    height: 100%;
+    margin-bottom: 3rem;
+    padding: 0;
+}
+
+.aboutme-profile-details-contents-block {
+    width: 100%;
+    margin: auto;
+    /* background: rgba(244, 244, 244, 0.75); */
+    background: linear-gradient(to right, rgba(256, 256, 256, 0.1), rgba(244, 244, 244, 1) 10%, rgba(244, 244, 244, 1) 90%, rgba(256, 256, 256, 0.1) 100%);
+    padding: 2rem 5rem;
+    border-radius: 15px;
+    word-break: keep-all;
 }
 
 .aboutme-skills {
@@ -183,6 +211,7 @@ h1, .h1, h2, .h2, h3, .h3  {
 }
 
 .aboutme-timeline {
+    /* background: linear-gradient(to right, white, rgba(135, 206, 235, 0.4) 10%, rgba(135, 206, 235, 0.4) 90%, white 100%); */
     min-height: 30vh;
 }
 
@@ -201,29 +230,29 @@ h1, .h1, h2, .h2, h3, .h3  {
     margin: 3rem auto;
     /* background : #474e5d; */
     border-radius: 14px;
-  }
+}
   
-  .aboutme-timeline-block::after {
+.aboutme-timeline-block::after {
     content: '';
     position: absolute;
     width: 6px;
-    background-color: green;
-    opacity: 0.3;
+    background-color: rgba(0,175,0,0.3);
+    opacity: 1;
     top: 0;
     bottom: 0;
     left: 50%;
     margin-left: -3px;
-  }
+}
   
-  .aboutme-timeline-content-block {
+.aboutme-timeline-content-block {
     display: inline-block;
     padding: 10px 40px;
     position: relative;
     background-color: inherit;
     width: 50%;
-  }
+}
   
-  .aboutme-timeline-content-block::after {
+.aboutme-timeline-content-block::after {
     content: '';
     position: absolute;
     width: 25px;
@@ -234,22 +263,22 @@ h1, .h1, h2, .h2, h3, .h3  {
     top: 15px;
     border-radius: 50%;
     z-index: 1;
-  }
+}
 
-  .aboutme-timeline-link {
-      color: black;
-      text-decoration: none;
-  }
+.aboutme-timeline-link {
+    color: black;
+    text-decoration: none;
+}
   
-  .aboutme-timeline-left {
+.aboutme-timeline-left {
     left: 0;
-  }
+}
   
-  .aboutme-timeline-right {
+.aboutme-timeline-right {
     left: 50%;
-  }
+}
   
-  .aboutme-timeline-left::before {
+.aboutme-timeline-left::before {
     content: " ";
     height: 0;
     position: absolute;
@@ -260,9 +289,9 @@ h1, .h1, h2, .h2, h3, .h3  {
     border: medium solid oldlace;
     border-width: 10px 0 10px 10px;
     border-color: transparent transparent transparent oldlace;
-  }
+}
   
-  .aboutme-timeline-right::before {
+.aboutme-timeline-right::before {
     content: " ";
     height: 0;
     position: absolute;
@@ -273,154 +302,167 @@ h1, .h1, h2, .h2, h3, .h3  {
     border: medium solid oldlace;
     border-width: 10px 10px 10px 0;
     border-color:  transparent oldlace transparent transparent;
-  }
+}
   
-  .aboutme-timeline-right::after {
-    left: -16px;
-  }
+.aboutme-timeline-right::after {
+    left: -12.5px;
+}
   
-  .aboutme-timeline-content {
+.aboutme-timeline-content {
     padding: 20px 30px;
     background-color: oldlace;
     position: relative;
     border-radius: 6px;
-  }
+}
 
-  .aboutme-projects-cover {
+.aboutme-projects-cover {
     /* background: white; */
     /* border-radius: 15px; */
     /* padding: 3rem 0; */
     /* border: 1px solid #f5f5f5; */
-  }
-
-  .aboutme-projects-content {
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: center;
-  }
-
-  .aboutme-projects-content-block {
-        width: 31.5rem;
-        margin: 1rem;
-        border: 2px solid #f5f5f5;
-        border-radius: 5px;
-        cursor: pointer;
-        transition: box-shadow 0.17s ease-in-out;
-  }
-
-  .aboutme-projects-content-block:hover {
-    box-shadow: 0 19px 38px rgba(0,0,0,0.30), 0 15px 12px rgba(0,0,0,0.22);
-  }
-
-  .aboutme-projects-content-link {
-      color: black;
-      text-decoration: none;
-  }
-
-  .aboutme-projects-content-pic {
-    text-align: center;
-      padding: 1rem;
-  }
-
-  .aboutme-projects-content-img {
-      height: 25rem;
-  }
-
-  .aboutme-projects-content-summary {
-      text-align: center;
-      padding: 1rem;
-  }
-  
-  @media screen and (max-width: 768px) {
-        
-    .aboutme-skills {
-        min-height: 30vh;
-        margin-top: -5rem;
-    }
-
-    .aboutme-skills-cover {
-        width: 80%;
-        margin: 0 auto;
-        background: white;
-        border: 1px solid #E6ECF8;
-        border-radius: 15px;
-        padding: 0;
-    }
-    
-    .aboutme-projects-content-block {
-        width: 60%;
-        min-width: 30rem;
-        margin: 3rem auto;
-    }
-
-    .aboutme-timeline-block::after {
-    left: 31px;
-    }
-    
-    .aboutme-timeline-content-block {
-    width: 100%;
-    padding-left: 70px;
-    padding-right: 25px;
-    }
-    
-    .aboutme-timeline-content-block::before {
-    left: 60px;
-    border: medium solid oldlace;
-    border-width: 10px 10px 10px 0;
-    border-color: transparent oldlace transparent transparent;
-    }
-  
-    .aboutme-timeline-left::after, .aboutme-timeline-right::after {
-    left: 17.5px;
-    }
-
-    .aboutme-timeline-right {
-    left: 0%;
-    }
-  }
-
-@media screen and (max-width: 1024px) {
-    .aboutme-profile-pic-block {
-        width: 100%;
-    }
-    .aboutme-profile-block {
-        width: 100%;
-    }
-    .aboutme-profile-block .aboutme-profile-pic {
-        max-height: 80%;
-        left: 50%;
-        top: 50%;
-        transform: translate(-50%, -50%);
-    }
-    .aboutme-profile-block {
-        flex-wrap: wrap;
-    }
-    .aboutme-profile-summary-block {
-        width: 100%;
-        order: 2;
-    }
-    .aboutme-profile-pic-block {
-        width: 100%;
-        order : 1;
-    }
-
-    .aboutme-skills-block {
-        display: flex;
-        flex-flow: wrap;
-        border-top: 1px solid #e6ecf8;
-    }
-
-    .aboutme-skills-half:nth-child(odd) {
-        border-right: none;
-        border-bottom: 1px solid #e6ecf8;
-    }
-
-    .aboutme-projects-content-block {
-        width: 60%;
-        min-width: 30rem;
-        margin: 3rem auto;
-    }
 }
+
+.aboutme-projects-content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.aboutme-projects-content-block {
+    width: 35rem;
+    margin: 2rem;
+    border: 2px solid #f5f5f5;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: box-shadow 0.17s ease-in-out;
+}
+
+.aboutme-projects-content-block:hover {
+    box-shadow: 0 19px 38px rgba(0,0,0,0.30), 0 15px 12px rgba(0,0,0,0.22);
+}
+
+.aboutme-projects-content-link {
+    color: black;
+    text-decoration: none;
+}
+
+.aboutme-projects-content-pic {
+    text-align: center;
+    padding: 1rem;
+}
+
+.aboutme-projects-content-img {
+    height: 25rem;
+}
+
+.aboutme-projects-content-summary {
+    text-align: center;
+    padding: 1rem;
+}
+
+    @media screen and (max-width: 1024px) {
+
+        .aboutme-profile-pic-block {
+            width: 100%;
+        }
+
+        .aboutme-profile-block {
+            width: 100%;
+            flex-wrap: wrap;
+        }
+
+        .aboutme-profile-block .aboutme-profile-pic {
+            max-height: 80%;
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%, -50%);
+        }
+
+        .aboutme-profile-details-block {
+            width: 100%;
+            flex-wrap: wrap;
+        }
+
+        .aboutme-profile-details-contents-block {
+            width: 60%;
+        }
+
+        .aboutme-profile-summary-block {
+            width: 100%;
+            order: 2;
+        }
+
+        .aboutme-profile-pic-block {
+            width: 100%;
+            order : 1;
+        }
+            
+        .aboutme-skills {
+            min-height: 30vh;
+            margin-top: -5rem;
+        }
+
+        .aboutme-skills-cover {
+            width: 60%;
+            margin: 0 auto;
+            background: white;
+            border: 1px solid #E6ECF8;
+            border-radius: 15px;
+            padding: 0;
+        }
+
+        .aboutme-skills-block {
+            display: flex;
+            flex-flow: wrap;
+            border-top: 1px solid #e6ecf8;
+        }
+
+        .aboutme-skills-half:nth-child(odd) {
+            border-right: none;
+            border-bottom: 1px solid #e6ecf8;
+        }
+
+        .aboutme-projects-content-block {
+            width: 60%;
+            min-width: 30rem;
+            margin: 3rem auto;
+        }
+
+    }
+  
+    @media screen and (max-width: 768px) {
+    
+        .aboutme-projects-content-block {
+            width: 60%;
+            min-width: 30rem;
+            margin: 3rem auto;
+        }
+
+        .aboutme-timeline-block::after {
+            left: 31px;
+        }
+        
+        .aboutme-timeline-content-block {
+            width: 100%;
+            padding-left: 70px;
+            padding-right: 25px;
+        }
+        
+        .aboutme-timeline-content-block::before {
+            left: 60px;
+            border: medium solid oldlace;
+            border-width: 10px 10px 10px 0;
+            border-color: transparent oldlace transparent transparent;
+        }
+
+        .aboutme-timeline-left::after, .aboutme-timeline-right::after {
+            left: 17.5px;
+        }
+
+        .aboutme-timeline-right {
+            left: 0%;
+        }
+    }
     
 @keyframes gradient {
     0% {
