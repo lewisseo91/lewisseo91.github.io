@@ -13,6 +13,13 @@
           document.write('<script src="{{ js | relative_url }}"></scr' + 'ipt>');
       	}
       </script>
+    {% elsif js contains 'aos' %}
+      <script>
+          document.write('<script src="{{ js | relative_url }}"></scr' + 'ipt>');
+      </script>
+      <script>
+        AOS.init();
+      </script>
     {% else %}
       <script src="{{ js | relative_url }}"></script>
     {% endif %}
