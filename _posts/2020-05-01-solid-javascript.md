@@ -1,6 +1,6 @@
 ---
 layout: post
-title: 객체지향 자바스크립트 (1회차) 코드스피츠 86
+title: 객체지향 자바스크립트 (1회차) 코드스피츠
 tags: [javascript]
 ---
 
