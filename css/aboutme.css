@@ -333,6 +333,11 @@ h1, .h1, h2, .h2, h3, .h3  {
   
   @media screen and (max-width: 768px) {
         
+    .aboutme-skills {
+        min-height: 30vh;
+        margin-top: -5rem;
+    }
+
     .aboutme-skills-cover {
         width: 80%;
         margin: 0 auto;
