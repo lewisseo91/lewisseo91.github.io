@@ -7,7 +7,7 @@ layout: null
 /* --- General --- */
 
 body {
-  font-family: 'Noto Sans KR', sans-serif;
+  font-family: 'Georgia', sans-serif;
   font-size: 18px;
   color: #404040;
   position: relative;
@@ -118,10 +118,10 @@ img {
 /* --- Navbar --- */
 
 .navbar-custom {
-  /* background-color: {{ site.navbar-col }}; */
-  /* border-bottom: 1px solid #EAEAEA; */
-  background-color: white;
-  border-bottom: none;
+  background-color: {{ site.navbar-col }};
+  border-bottom: 1px solid #EAEAEA;
+  /* background-color: white; */
+  /* border-bottom: none; */
   font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
   {% if site.navbar-img %}
   background-image: url({{ site.navbar-img | relative_url }});
