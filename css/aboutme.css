@@ -219,6 +219,7 @@ h1, .h1, h2, .h2, h3, .h3  {
 .aboutme-skill-title {
     font-size: 2.4rem;
     font-weight: bold;
+    font-style: italic;
 }
 
 .aboutme-skills-pic {
@@ -526,6 +527,7 @@ h1, .h1, h2, .h2, h3, .h3  {
         .aboutme-skill-title {
             font-size: 1.9rem;
             font-weight: 700;
+            font-style: italic;
         }
 
         .aboutme-projects-content-block {
