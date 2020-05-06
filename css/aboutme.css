@@ -40,6 +40,12 @@ h1, .h1, h2, .h2, h3, .h3  {
     word-break: keep-all;
 }
 
+.modal-aboutme .modal-aboutme-link-btn {
+    position: absolute;
+    right: 2rem;
+    top: 2rem;
+}
+
 .modal-aboutme-detail {
     margin-left: 2.5rem;
 }
@@ -59,7 +65,8 @@ h1, .h1, h2, .h2, h3, .h3  {
 }
 
 .gradient-background {
-    background: linear-gradient(60deg, #fff, #E2F5FE, #23a6d5, #e73c7e);
+    background: linear-gradient(60deg, #00B4FF, #00B4FF, #E2F5FE, #23a6d5);
+    /* background: linear-gradient(60deg, #fff, #E2F5FE, #23a6d5, #e73c7e); */
     background-size: 400% 400%;
     animation: gradient 15s ease infinite;
 }
@@ -88,6 +95,7 @@ h1, .h1, h2, .h2, h3, .h3  {
 }
 
 .aboutme-common-title {
+    color: #515151;
     text-align: center;
     /* font-style: italic; */
 }
@@ -98,11 +106,17 @@ h1, .h1, h2, .h2, h3, .h3  {
 /* animation: gradient 15s ease infinite; */
 /* background-size: 200% 200%; */
 .aboutme-introduce {
-    min-height: 50vh;
+    background: #00B4FF;
+    min-height: 80vh;
     /* padding: 0 15px; */
 }
+
+.aboutme-phrase {
+    color: white;
+}
+
 .aboutme-phrase-content {
-    font-style:italic;
+    /* font-style:italic; */
     /* color: rgba(53, 53, 53, 0.9); */
     /* animation: gradient-color 15s ease infinite; */
     font-size: 2.8rem;
@@ -117,12 +131,16 @@ h1, .h1, h2, .h2, h3, .h3  {
 .aboutme-profile-block {
     height: 100%;
     display: flex;
-    margin-bottom: 3rem;
+    margin: 3rem auto;
 }
 
 .aboutme-profile-summary-block {
     width: 100%;
     align-self: center;
+}
+
+.aboutme-profile-summary-block .aboutme-profile-summary-content {
+    color: #515151;
 }
 
 .aboutme-profile-pic-block {
@@ -137,8 +155,9 @@ h1, .h1, h2, .h2, h3, .h3  {
 }
 
 .aboutme-profile-pic-block .aboutme-profile-pic {
-    max-height: 85%;
+    /* max-height: 85%; */
     position: relative;
+    left: 50%;
     top: 50%;
     transform: translateY(-50%);
     border-radius: 50%;
@@ -147,7 +166,7 @@ h1, .h1, h2, .h2, h3, .h3  {
 .aboutme-profile-details-block {
     display: flex;
     height: 100%;
-    margin-bottom: 3rem;
+    /* margin-bottom: 3rem; */
     padding: 0;
 }
 
@@ -360,12 +379,14 @@ h1, .h1, h2, .h2, h3, .h3  {
     border: 2px solid #f5f5f5;
     border-radius: 5px;
     cursor: pointer;
-    transition: all 0.17s ease-in-out;
+    transition: all 0.5s ease-in-out;
 }
 
 .aboutme-projects-content-block .aboutme-projects-modal-view {
     position: absolute;
     display: none;
+    width:100%;
+    height:100%;
     top: 50%;
     left: 50%;
     z-index: 2;
@@ -380,6 +401,11 @@ h1, .h1, h2, .h2, h3, .h3  {
 .aboutme-projects-content-block .aboutme-projects-modal-view .btn {
     padding: 1.3rem 2.6rem;
     border-radius: 15px;
+}
+
+.aboutme-projects-content-block:hover .aboutme-projects-content-hover-img {
+    width: 100%;
+    height: 28rem;
 }
 
 .aboutme-projects-content-block:hover::after{
@@ -420,6 +446,9 @@ h1, .h1, h2, .h2, h3, .h3  {
     text-align: center;
     padding: 1rem;
 }
+.aboutme-projects-content-summary h3 {
+    line-height: 1.5;
+}
 
     /* 태블릿 까지 */
     @media only screen and (max-width: 1023px) {
@@ -434,7 +463,7 @@ h1, .h1, h2, .h2, h3, .h3  {
         }
 
         .aboutme-profile-block .aboutme-profile-pic {
-            max-height: 85%;
+            /* max-height: 85%; */
             left: 50%;
             top: 50%;
             transform: translate(-50%, -50%);
@@ -514,6 +543,10 @@ h1, .h1, h2, .h2, h3, .h3  {
   
     /* 모바일만 */
     @media only screen and (max-width: 768px) {
+
+        .aboutme-phrase {
+            padding-bottom: 0;
+        }
 
         .aboutme-phrase-content {
             font-style:italic;

@@ -7,7 +7,7 @@ layout: null
 /* --- General --- */
 
 body {
-  font-family: 'Georgia', sans-serif;
+  font-family: 'NanumBarunGothic', sans-serif;
   font-size: 18px;
   color: #404040;
   position: relative;
@@ -22,7 +22,8 @@ p {
   margin: 30px 0;
 }
 h1,h2,h3,h4,h5,h6 {
-  font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-family: 'NanumBarunGothic', sans-serif;
+  /* font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif; */
   font-weight: 800;
 }
 a {
@@ -61,7 +62,8 @@ hr.small {
 }
 
 .main-explain-area {
-  font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-family: 'NanumBarunGothic', sans-serif;
+  /* font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif; */
   padding: 15px inherit;
 }
 
@@ -125,10 +127,11 @@ img {
 /* --- Navbar --- */
 
 .navbar-custom {
-  background-color: {{ site.navbar-col }};
-  border-bottom: 1px solid #EAEAEA;
-  /* background-color: white; */
-  /* border-bottom: none; */
+  /* background-color: {{ site.navbar-col }}; */
+  /* border-bottom: 1px solid #EAEAEA; */
+  background-color: white;
+  border-bottom: none;
+  /* font-family: 'NanumBarunGothic', sans-serif; */
   font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
   {% if site.navbar-img %}
   background-image: url({{ site.navbar-img | relative_url }});
@@ -198,9 +201,12 @@ img {
   border-radius: 50%;
   margin-left: -50%;
   display: inline-block;
-  box-shadow: 0 0 8px rgba(0, 0, 0, .8);
+  box-shadow: 3px 3px 8px rgba(242, 242, 242, .8);
+  -webkit-box-shadow: 3px 3px 8px rgba(242, 242, 242, .8);
+  -moz-box-shadow: 3px 3px 8px rgba(242, 242, 242, .8);
+  /* box-shadow: 0 0 8px rgba(0, 0, 0, .8);
   -webkit-box-shadow: 0 0 5px rgba(0, 0, 0, .8);
-  -moz-box-shadow: 0 0 8px rgba(0, 0, 0, .8);
+  -moz-box-shadow: 0 0 8px rgba(0, 0, 0, .8); */
 }
 .navbar-custom .avatar-container .avatar-img {
   width: 100%;
@@ -220,9 +226,12 @@ img {
 
   .navbar-custom .avatar-container .avatar-img-border {
     width: 100%;
-    box-shadow: 1px 1px 2px rgba(0, 0, 0, .8);
+    box-shadow: 1px 1px 1px rgba(242, 242, 242, .8);
+    -webkit-box-shadow: 1px 1px 1px rgba(242, 242, 242, .8);
+    -moz-box-shadow: 1px 1px 1px rgba(242, 242, 242, .8);
+    /* box-shadow: 1px 1px 2px rgba(0, 0, 0, .8);
     -webkit-box-shadow: 1px 1px 2px rgba(0, 0, 0, .8);
-    -moz-box-shadow: 1px 1px 2px rgba(0, 0, 0, .8);
+    -moz-box-shadow: 1px 1px 2px rgba(0, 0, 0, .8); */
   }
 
   .navbar-custom .avatar-container .avatar-img {
@@ -309,7 +318,8 @@ footer .list-inline {
   padding: 0;
 }
 footer .copyright {
-  font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-family: 'NanumBarunGothic', sans-serif;
+  /* font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif; */
   text-align: center;
   margin-bottom: 0;
 }
@@ -375,7 +385,8 @@ footer .theme-by {
   margin: 0 0 10px;
 }
 .post-preview .post-entry {
-  font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-family: 'NanumBarunGothic', sans-serif;
+  /* font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif; */
 }
 .post-entry-container {
   display: inline-block;
@@ -412,7 +423,8 @@ footer .theme-by {
 /* --- Tags --- */
 
 .blog-tags {
-  font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-family: 'NanumBarunGothic', sans-serif;
+  /* font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif; */
   color: #999;
   font-size: 15px;
   margin-bottom: 30px;
@@ -505,7 +517,8 @@ footer .theme-by {
   font-size: 27px;
   line-height: 1.1;
   display: block;
-  font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-family: 'NanumBarunGothic', sans-serif;
+  /* font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif; */
   font-weight: 300;
   margin: 10px 0 0;
 }
@@ -530,7 +543,8 @@ footer .theme-by {
   padding: 5px 10px;
   font-size: 11px;
   color: #EEE;
-  font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-family: 'NanumBarunGothic', sans-serif;
+  /* font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif; */
   right: 0;
   bottom: 0;
   display: none;
@@ -614,7 +628,8 @@ footer .theme-by {
 /* --- Pager --- */
 
 .pager li a {
-  font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-family: 'NanumBarunGothic', sans-serif;
+  /* font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif; */
   text-transform: uppercase;
   font-size: 14px;
   font-weight: 800;
@@ -794,7 +809,8 @@ pre {
 }
 
 #full-tags-list {
-  font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-family: 'NanumBarunGothic', sans-serif;
+  /* font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif; */
 }
 
 #full-tags-list .tag-entry {
@@ -810,3 +826,6 @@ pre {
   font-style: italic;
   font-size: 16px;
 }
+
+/* 나눔 바른 고딕 */
+@font-face { font-family: 'NanumBarunGothic'; font-style: normal; font-weight: 400; src: url('//cdn.jsdelivr.net/font-nanumlight/1.0/NanumBarunGothicWeb.eot'); src: url('//cdn.jsdelivr.net/font-nanumlight/1.0/NanumBarunGothicWeb.eot?#iefix') format('embedded-opentype'), url('//cdn.jsdelivr.net/font-nanumlight/1.0/NanumBarunGothicWeb.woff') format('woff'), url('//cdn.jsdelivr.net/font-nanumlight/1.0/NanumBarunGothicWeb.ttf') format('truetype'); } @font-face { font-family: 'NanumBarunGothic'; font-style: normal; font-weight: 700; src: url('//cdn.jsdelivr.net/font-nanumlight/1.0/NanumBarunGothicWebBold.eot'); src: url('//cdn.jsdelivr.net/font-nanumlight/1.0/NanumBarunGothicWebBold.eot?#iefix') format('embedded-opentype'), url('//cdn.jsdelivr.net/font-nanumlight/1.0/NanumBarunGothicWebBold.woff') format('woff'), url('//cdn.jsdelivr.net/font-nanumlight/1.0/NanumBarunGothicWebBold.ttf') format('truetype') } @font-face { font-family: 'NanumBarunGothic'; font-style: normal; font-weight: 300; src: url('//cdn.jsdelivr.net/font-nanumlight/1.0/NanumBarunGothicWebLight.eot'); src: url('//cdn.jsdelivr.net/font-nanumlight/1.0/NanumBarunGothicWebLight.eot?#iefix') format('embedded-opentype'), url('//cdn.jsdelivr.net/font-nanumlight/1.0/NanumBarunGothicWebLight.woff') format('woff'), url('//cdn.jsdelivr.net/font-nanumlight/1.0/NanumBarunGothicWebLight.ttf') format('truetype'); } .nanumbarungothic * { font-family: 'NanumBarunGothic', sans-serif; }
