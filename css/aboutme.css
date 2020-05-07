@@ -257,7 +257,7 @@ h1, .h1, h2, .h2, h3, .h3  {
 }
 
 .aboutme-timeline {
-    background: #00b4ff;
+    background: white;
     /* background: linear-gradient(to right, white, rgba(135, 206, 235, 0.4) 10%, rgba(135, 206, 235, 0.4) 90%, white 100%); */
     min-height: 30vh;
 }
@@ -379,7 +379,7 @@ h1, .h1, h2, .h2, h3, .h3  {
 }
 
 .aboutme-projects {
-    background: white;
+    background: #00b4ff;
 }
 
 .aboutme-projects-cover {
