@@ -135,6 +135,7 @@ h1, .h1, h2, .h2, h3, .h3  {
 }
 
 .aboutme-profile-block {
+    max-width: 100rem;
     height: 100%;
     display: flex;
     margin: 3rem auto;
