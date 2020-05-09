@@ -142,11 +142,9 @@ h1, .h1, h2, .h2, h3, .h3  {
 
 .aboutme-profile-summary-block {
     display: flex;
-    display: -ms-flexbox;
     /*for ie*/
     justify-content: space-around;
     /*for moz & chrome*/
-    -webkit-justify-content: space-evenly !important;
     width: 100%;
     align-self: center;
 }
@@ -159,7 +157,7 @@ h1, .h1, h2, .h2, h3, .h3  {
 }
 
 .aboutme-profile-pic-block {
-    width: 100%;
+    /* width: 100%; */
     /* height: 100%; */
     max-width: 30rem;
     max-height: 30rem;
