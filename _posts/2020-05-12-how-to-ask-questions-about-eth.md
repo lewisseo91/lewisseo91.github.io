@@ -37,7 +37,7 @@ tags: [general]
          해당 부분을 먼저 이해하고 접근하려고 했습니다.
 
          적어도 어떤 문제에 나타난 개념 부분
-         (ex. 새로운 개념의 단어, Angular로 치면 Provider, Service, RxJS, Observable 같은?)
+         (ex. 새로운 개념의 단어, Angular로 치면 Provider, RxJS, Observable 같은?)
          은 먼저 따로 이해를 하고 나서 질문을 하거나
          풀이를 시도해 본다면 나중에 답변을 들을 때
          답변자가 '아 그건 "새로운 개념"의 이걸 이렇게 해보세요.'라고 할 때
