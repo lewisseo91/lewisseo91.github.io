@@ -186,6 +186,7 @@ h1, .h1, h2, .h2, h3, .h3  {
 
 .aboutme-profile-details-contents-block {
     width: 100%;
+    max-width: 105rem;
     margin: auto;
     /* background: linear-gradient(to right, rgba(256, 256, 256, 0.1), rgba(256, 256, 256, 1) 10%, rgba(256, 256, 256, 1) 90%, rgba(256, 256, 256, 0.1) 100%); */
     padding: 2rem 5rem 0 5rem;
