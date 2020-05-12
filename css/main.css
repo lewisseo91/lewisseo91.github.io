@@ -18,7 +18,7 @@ body {
   {% endif %}
 }
 p {
-  line-height: 1.5;
+  line-height: 2;
   margin: 30px 0;
 }
 h1,h2,h3,h4,h5,h6 {
@@ -708,7 +708,7 @@ pre {
   line-height: 1.5em;
 }
 pre code {
-  line-height: 1.6em;
+  line-height: 2em;
 }
 .highlight pre {
   border: none;
@@ -717,8 +717,8 @@ pre code {
 }
 .highlight > pre {
   background-image: linear-gradient(
-    rgba(0,0,0,0.06), rgba(0,0,0,0.06) 1.6em, rgba(0,0,0,0.03) 1.6em, rgba(0,0,0,0.03) 3.2em);
-  background-size: auto 3.2em;
+    rgba(0,0,0,0.06), rgba(0,0,0,0.06) 2em, rgba(0,0,0,0.03) 2em, rgba(0,0,0,0.03) 4em);
+  background-size: auto 4em;
   background-position-y: 10px;
   border: 1px solid rgba(0,0,0,0.1);
   border-left: 7px solid #444;
