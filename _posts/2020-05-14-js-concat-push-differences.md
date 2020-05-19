@@ -21,10 +21,13 @@ tags: [javascript]
 
    그래프로 치면 concat은 시작은 천천히 그렇지만 크기가 커지면 커질수록 복사하고 새로운 배열을 반환하는 것으로 시간이 기하급수적으로 늘어났다.
 
+ ![http://drive.google.com/uc?export=view&id=1iJkak8es3VIf4rPeB-zcop3uCzSlYNuv](http://drive.google.com/uc?export=view&id=1iJkak8es3VIf4rPeB-zcop3uCzSlYNuv)
 
- - 사진은 추후에 업데이트 할 예정입니다.
+ <br />
 
+ ![http://drive.google.com/uc?export=view&id=1OOrQLf3iIG5QTvB8QTPjLDhxW1oefNnI](http://drive.google.com/uc?export=view&id=1OOrQLf3iIG5QTvB8QTPjLDhxW1oefNnI)
 
+ 
 #### 참고
 
 #### [https://stackoverflow.com/questions/44572026/difference-between-concat-and-push](https://stackoverflow.com/questions/44572026/difference-between-concat-and-push)
