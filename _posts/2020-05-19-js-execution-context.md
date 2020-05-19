@@ -68,12 +68,20 @@ tags: [javascript]
 #### 다른 블로그 보고 참고로 더 정리한 부분
 
  - IIFE 중 클로저 활용 패턴(모든 IIFE가 클로저 인 것은 아니기 때문에)에서 **비공개 변수**를 가질 수 있음.
+ 
+ <br />
 
  - 클로저 내부의 변수들은 비공개 변수(closure는 closed 기 떄문에 closure 다)기 때문에 **변수 은닉화**가 가능하다.
+ 
+ <br />
 
  - 실행 컨텍스트의 기초 : 실행 컨텍스트는 **Creation Phase** 와 **Execution Phase**로 나뉘어진다.
  
+ <br />
+ 
  - 모든 실행 컨텍스트는 같은 형태(feature)를 가진다. 같은 형태들은 **Creation Phase**에서 만들어 진다.
+ 
+ <br />
 
  - **Creation Phase**  
 
@@ -85,14 +93,22 @@ tags: [javascript]
 
     4. **environmentRecord** 메모리 컨테이너에 variables, arguments, function declarations 가 생성된다.  
         모든 variables, arguments 는 초기값 'undefined'로 생성된다.
+ 
+ <br />
 
  - **Execution Phase**
 
     1. Creation Phase 후, JS Engine은 function 내의 코드를 동기적으로 실행한다. (한번에 한 줄, 위에서 아래로)
+ 
+ <br />
 
  - **Execution Phase**는 값들(values)을 return 하는 것에 대한 것이다.
+ 
+ <br />
 
  - **Execution Phase**는 호이스팅이 일어나고 undefined 였던 값을 메모리 공간에서 **값의 참조**에 대해 찾는다. (스코프 체인도 여기서 적용)
+ 
+ <br />
 
  - 변수에 값이 할당 된다면 해당 값을 'undefined'에서 '해당 값'으로 변경해 준다.
 
