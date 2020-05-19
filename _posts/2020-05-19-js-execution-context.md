@@ -71,7 +71,7 @@ tags: [javascript]
  
  <br />
 
- - 클로저 내부의 변수들은 비공개 변수(closure는 closed 기 떄문에 closure 다)기 때문에 **변수 은닉화**가 가능하다.
+ - 클로저 내부의 변수들은 비공개 변수(closure는 closed기 때문에 closure 다)기 때문에 **변수 은닉화**가 가능하다.
  
  <br />
 

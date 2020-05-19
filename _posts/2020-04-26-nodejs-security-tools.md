@@ -18,32 +18,32 @@ tags: [nodejs]
 
  - http response header 들의 보안 관련 세팅을 위한 미들웨어 function
 
-##### <center>8가지 주요 기능</center>
+#### <center>8가지 주요 기능</center>
 
-##### 1. csp : Content-Security-Policy 해더
+#### 1. csp : Content-Security-Policy 해더
     cross-site scripting attacks (사이트에 스크립트 코드를 삽입하는 공격기법)
     cross-site injection(사이트에 쿼리를 통해 공격)를 막음
 
-##### 2. hidePoweredBy : X-Powered-By 해더를 숨김
+#### 2. hidePoweredBy : X-Powered-By 해더를 숨김
     X-Powered-By : 웹서버가 어떤 베이스를 가지고 돌아가고 있는지 보여주는 해더
 
-##### 3. hsts : Strict-Transport-Security 해더
+#### 3. hsts : Strict-Transport-Security 해더
     Secure Connection(TLS/SSL) 으로 하게 함
 
-##### 4. ieNoOpen : X-Download-Options 해더
+#### 4. ieNoOpen : X-Download-Options 해더
     IE 유저들이 내 사이트 내용들 다운로드 실행을 못하게 하기 위함. (IE 8 이상)
 
-##### 5. noCache : Cache-Control, Pragma 해더
+#### 5. noCache : Cache-Control, Pragma 해더
     client-side caching을 disable시킴
 
-##### 6. noSniff : X-Content-Type-Options 해더
+#### 6. noSniff : X-Content-Type-Options 해더
     선언된 content-type에서 벗어난 MIME-sniffing(훔쳐보기)를 막음
 
-##### 7. frameguard : X-Frame-Options 해더
+#### 7. frameguard : X-Frame-Options 해더
     clickjacking 보호 를 제공한다.
     **clickjacking : 감춰진 링크를 사용자가 클릭함으로써 의도되지 않은 행동을 수행하게 속이는 것 - 가짜 페이지에서 행동을 하게 만들 수 있음
 
-##### 8. xssFilter : X-XSS-Protection
+#### 8. xssFilter : X-XSS-Protection
     cross-site scripting(사이트에 스크립트 코드/ 쿼리를 삽입하는 공격기법)을 하지 못하게 막는 필터
     
 <br />
@@ -71,7 +71,7 @@ tags: [nodejs]
 
 <br />
 
-#### <center>3. JWT 모듈 (토큰 베이스)</center>
+### <center>3. JWT 모듈 (토큰 베이스)</center>
 
 <br />
   
@@ -89,11 +89,11 @@ tags: [nodejs]
 
   - signature : header 인코딩 값과 payload 의 인코딩 값을 합친 후에 비밀키로 해쉬를 생성
 
-   pseudo code 구조 : HMACSHA256(base64UrlEncode(header) + "." + base64UrlEncode(payload), secret key)
+     pseudo code 구조 : HMACSHA256(base64UrlEncode(header) + "." + base64UrlEncode(payload), secret key)
 
 <br />
 
-#### <center>4. morgan (logger)</center>
+### <center>4. morgan (logger)</center>
 
 <br />
 
@@ -101,7 +101,7 @@ tags: [nodejs]
 
 <br />
 
-#### <center>5. body-Parser</center>
+### <center>5. body-Parser</center>
 
 <br />
 
@@ -111,7 +111,7 @@ tags: [nodejs]
 
 <br />
   
-#### <center>6. pm2 (프로세스 매니저)</center>
+### <center>6. pm2 (프로세스 매니저)</center>
 
 <br />
 
@@ -123,7 +123,7 @@ tags: [nodejs]
 
 <br />
 
-#### <center>7. passport.js</center>
+### <center>7. passport.js</center>
 
 <br />
   
