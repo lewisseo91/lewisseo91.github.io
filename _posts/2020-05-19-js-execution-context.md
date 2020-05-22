@@ -1,7 +1,7 @@
 ---
 layout: post
 title: 실행 컨텍스트
-tags: [javascript]
+tags: [javascript, corejavascript]
 ---
 
 #### 코어자바스크립트 책을 보고 기억할 부분만 쓴 글입니다.

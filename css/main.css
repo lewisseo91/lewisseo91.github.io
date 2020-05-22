@@ -714,6 +714,7 @@ pre code {
   border: none;
   background: none;
   margin: 0;
+  margin-bottom: 3rem;
 }
 .highlight > pre {
   background-image: linear-gradient(
