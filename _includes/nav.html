@@ -30,7 +30,7 @@
         {%- assign tags_list = site_tags | split:',' | sort -%}
         {% if tags_list.size > 0 %}
         <li class="navlinks-container">
-          <a class="navlinks-parent text-uppercase" href="javascript:void(0)">Tags</a>
+          <a class="navlinks-parent text-uppercase" href="javascript:void(0)">Posts</a>
           <div class="navlinks-children abs-right-align">
             {%- for tag in tags_list -%}
             <a class="text-capitalize" href="/tags/#{{- tag -}}">{{- tag -}}&nbsp;({{site.tags[tag].size}})</a>

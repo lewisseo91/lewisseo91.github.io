@@ -8,11 +8,11 @@ p {
 }
 
     /* 해당 페이지 액션 달라서 */
-a:hover, a:focus {
+.aboutme-link:hover, .aboutme-link:focus {
     text-decoration: none;
     color: black;
 }
-a:visited {
+.aboutme-link:visited {
     text-decoration: none;
     color: black;
 }

@@ -37,6 +37,44 @@ var main = {
       });
     });
 
+    // 원하는 태그만 보여주기
+    $(window).on('hashchange', function(e) {
+      if (window.location.hash) {
+        // e.preventDefault();
+        var hash_name = "."+ window.location.hash.replace("#", "");
+        // nav 클릭
+        if (window.location.pathname == "/tags/") {
+          $(hash_name).show();
+          $(".linked-panel").not(hash_name).hide();
+          $(".tags-category").hide();
+          $("#show-all-tags").show(); // 버튼 숨기기
+        }
+      }
+    });
+    // 첫 페이지 로드
+    if (window.location.pathname == "/tags/") {
+      var hash_name = "."+ window.location.hash.replace("#", "")
+      $(".linked-panel").not(hash_name).hide();
+      $(".tags-category").hide();
+    }
+
+    // 전체보기 버튼
+    $("#show-all-tags").on('click', function(e){
+      // e.preventDefault();
+      $(".linked-panel").show();
+      $(".tags-category").show();
+      $("#show-all-tags").hide(); // 버튼 숨기기
+    })
+
+    // 카테고리 태그 눌렀을 때
+    $(".tag-btn").on('click', function(e){
+      // e.preventDefault();
+      $(hash_name).show();
+      $(".linked-panel").not(hash_name).hide();
+      $(".tags-category").hide();
+      $("#show-all-tags").show(); // 버튼 숨기기
+    })
+
     // Ensure nested navbar menus are not longer than the menu header
     var menus = $(".navlinks-container");
     if (menus.length > 0) {
@@ -53,7 +91,7 @@ var main = {
         $.each(children, function(idx, el) { words = words.concat($(el).text().trim()); });
         var maxwidth = 0;
         $.each(words, function(id, word) {
-          console.log(word);
+          // console.log(word);
           fakeMenu.html("<a>" + word + "</a>");
           var width =  fakeMenu.width();
           if (width > maxwidth) {

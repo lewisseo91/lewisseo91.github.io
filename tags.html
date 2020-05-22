@@ -1,6 +1,6 @@
 ---
 layout: page
-title: '태그로 찾기'
+title: '포스트 찾기'
 ---
 
 {%- capture site_tags -%}
@@ -10,25 +10,34 @@ title: '태그로 찾기'
 {%- endcapture -%}
 {%- assign tags_list = site_tags | split:',' | sort -%}
 
+<div class="tags-category">
 {%- for tag in tags_list -%}
     <a href="#{{- tag -}}" class="btn btn-primary tag-btn"><i class="fa fa-tag" aria-hidden="true"></i>&nbsp;{{- tag -}}&nbsp;({{site.tags[tag].size}})</a>
 {%- endfor -%}
+</div>
+
+<div>
+    <button class="btn" id="show-all-tags">전체 보기</button>
+</div>
 
 <div id="full-tags-list">
 {%- for tag in tags_list -%}
-    <h2 id="{{- tag -}}" class="linked-section">
-        <i class="fa fa-tag" aria-hidden="true"></i>
-        &nbsp;{{- tag -}}&nbsp;({{site.tags[tag].size}})
-    </h2>
-    <div class="post-list">
-        {%- for post in site.tags[tag] -%}
-            <div class="tag-entry">
-                <a href="{{ post.url | relative_url }}">{{- post.title -}}</a>
-                <div class="entry-date">
-                    <time datetime="{{- post.date | date_to_xmlschema -}}">{{- post.date | date: site.date_format -}}</time>
+    <div class="{{tag}} linked-panel">
+        <h2 id="{{- tag -}}" class="linked-section">
+            <i class="fa fa-tag" aria-hidden="true"></i>
+            &nbsp;{{- tag -}}&nbsp;({{site.tags[tag].size}})
+        </h2>
+        <div class="post-list">
+            {%- for post in site.tags[tag] -%}
+                <div class="tag-entry">
+                    <a href="{{ post.url | relative_url }}">{{- post.title -}}</a>
+                    <div class="entry-date">
+                        <time datetime="{{- post.date | date_to_xmlschema -}}">{{- post.date | date: site.date_format -}}</time>
+                    </div>
                 </div>
-            </div>
-        {%- endfor -%}
+            {%- endfor -%}
+        </div>
     </div>
 {%- endfor -%}
 </div>
+
