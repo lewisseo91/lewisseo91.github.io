@@ -717,8 +717,9 @@ pre code {
   margin-bottom: 3rem;
 }
 .highlight > pre {
-  background-image: linear-gradient(
-    rgba(0,0,0,0.06), rgba(0,0,0,0.06) 2em, rgba(0,0,0,0.03) 2em, rgba(0,0,0,0.03) 4em);
+  /* background-image: linear-gradient(
+    rgba(0,0,0,0.06), rgba(0,0,0,0.06) 2em, rgba(0,0,0,0.03) 2em, rgba(0,0,0,0.03) 4em); */  
+  background: rgb(251, 252, 253);
   background-size: auto 4em;
   background-position-y: 10px;
   border: 1px solid rgba(0,0,0,0.1);
